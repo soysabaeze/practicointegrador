@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de turismo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="turismo.png" type="image/x-icon" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#recommendation">Recomendacion</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Bienvenido a tu página web</h2>
+            <p>Aquí puedes agregar una descripción breve de tu sitio web o negocio.</p>
+
+        </section>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="shutterstock_1371228326.jpg" class="d-block w-100" alt="1">
+              </div>
+              <div class="carousel-item">
+                <img src="Screen-Shot-2020-05-08-at-4.31.49-PM.png" class="d-block w-100" alt="2">
+              </div>
+              <div class="carousel-item">
+                <img src="shutterstock_489105307 (1).jpg" class="d-block w-100" alt="3">
+              </div>
+              
+          
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+          
+          
+          </section>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+          <ur>
+          
+          
+        <section id="about">
+            <h2>Sobre nosotros</h2>
+            <p>Aquí puedes contar la historia de tu empresa, misión, valores, etc.</p>
+        </section>
+
+        <section id="services">
+            <h2>Servicios</h2>
+            <p>Aquí puedes describir los servicios que ofreces.</p>
+                <div class="container">
+                    <div class="services">
+                        <div class="carta">
+                            <h3>Cerro Otto</h3>
+                            <p>cafeteras tipo italiana</p>
+                            <button>+ click</button>
+                        </div>
+                        <div class="carta">
+                            <h3>Bar de Hielo </h3>
+                            <p>nacionales e internacionales</p>
+                            <button>+ Info</button>
+                        </div>
+                        <div class="carta">
+                            <h3>Los mejores hoteles 4 estrellas</h3>
+                            <p> juegos de tazas </p>
+                            <button>+ Info</button>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form id="formularioContacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="asunto">Asunto:</label>
+                <select id="asunto" name="asunto" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="consulta">Consulta general</option>
+                    <option value="reclamo">Reclamo</option>
+                    <option value="sugerencia">Sugerencia</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <label for="medioContacto">Medio de contacto preferido:</label>
+                <div>
+                    <input type="radio" id="medioContactoEmail" name="medioContacto" value="email" checked>
+                    <label for="medioContactoEmail">Correo electrónico</label>
+
+                    <input type="radio" id="medioContactoTelefono" name="medioContacto" value="telefono">
+                    <label for="medioContactoTelefono">Teléfono</label>
+                </div>
+
+                <label for="imagen">Adjuntar imagen:</label>
+                <input type="file" id="imagen" name="imagen">
+
+                <button type="submit">Enviar formulario</button>
+            </form>
+        </section>     
+                        <ur>
+    
+    
+    </main>
+
+    <footer>
+                          <div class="footer-col">
+                            </div>
+                          
+                              <p>&copy; 2023 Somos nomodas . Todos los derechos reservados</p>
+                          </div>
+          </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
