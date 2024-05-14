@@ -6,58 +6,9 @@ html{
     scroll-behavior: smooth;
 }
 
-body {
+body{
     font-family: sans-serif;
     margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #f0f0f0;
-    padding: 20px;
-}
-
-
-header{
-    background-color: rgb(245,245,245);
-    
-}
-
-header .logo{
-    margin: 0;
-    padding: 25px 30px;
-    font-weight: bold;
-    color: blueviolet;
-    font-size: 1.6em;
-}
-
-header .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-header nav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
-}
-
-header a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-}
-
-header a:hover{
-    color: blueviolet;
-}
-
-h1 {
-    text-align: center;
-    font-size: 2em;
 }
 
 h1{ font-size: 3.5em;}
@@ -67,31 +18,33 @@ p{ font-size: 1.25em;}
 ul{ list-style: none;}
 li{ font-size: 1.25em;}
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+
+#about .container{
+    text-align: center;
+    padding: 200px 12px;
 }
 
-nav li {
-    display: inline-block;
-    margin-right: 20px;
+#servicios{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
 }
 
-nav a {
-    text-decoration: none;
-    color: #333;
+#servicios .container{
+    padding: 150px 12px;
 }
 
-main {
-    padding: 20px;
+#servicios h2{
+    margin-top: 0;
+    font-size: 3.2em;
 }
 
-section {
-    margin-bottom: 20px;
+#servicios p{
+    display: none;
 }
 
-#services .carta{
+#servicios .carta{
     background-position: center center;
     background-size: cover;
     padding: 50px 0px;
@@ -105,7 +58,7 @@ section {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("images/cafeteras.webp");
+    ,url("turismo.png");
 
 }
 
@@ -115,7 +68,7 @@ section {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("images/virginia.webp");
+    ,url("turismo.png");
 }
 
 .carta:nth-child(3){
@@ -124,106 +77,112 @@ section {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("images/vasos-cafe.webp");
+    ,url("turismo.png");
 
 }
 
-button{
-    font-size: 1.25em;
-    font-weight: bold;
-    padding: 10px 30px;
-    border-radius: 5px;
-    border: 2px solid rgba(0,0,0,0.3);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    color: white;
-      background-color: #FCC419;
-}
-
-button:hover{
-    background-color: rgb(101, 33, 165);
-}
-
-.container{
-    max-width: 1400px;
-    margin: auto;
-}
-
-.color-acento{ color:blueviolet; }
-
-#about .container{
-    text-align: center;
-    padding: 250px 12px;
-}
-
-#about li{
-    margin: 16px 0px;
-    font-weight: bold;
-}
-
-
-form {
+#formularioContacto {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 50%;
-    margin: 0 auto; /* Centers the form horizontally */
-}
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
 
-label {
-    width: 120px;
+  #formularioContacto label {
+    display: block;
     margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea,
-select {
+  }
+  
+  #formularioContacto input,
+  #formularioContacto select,
+  #formularioContacto textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-footer{
-    background-color: rgb(230,230,230);
-}
-
-footer p{
-    margin: 0;
-    padding: 12px;
-    color: rgb(100,100,100);
-}
-
-footer .container{
-    height: 150px;
+    border-radius: 3px;
+  }
+  
+  #formularioContacto textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  #formularioContacto input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  #formularioContacto button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #formularioContacto button:hover {
+    background-color: #444;
+  }
+  
+  /* Services Section Styles */
+  .services {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-/*responsive*/
-@media(max-width: 767px){
-    .footer-col{
-      width: 50%;
-      margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
+  
+  .carta {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
   }
-
-
-  @media (min-width: 850px){
-    header{
-        position: fixed;
-        width: 100%;
-    }
-
-    header .container{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
-    }
+  
+  .carta h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .carta button {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .carta button:hover {
+    background-color: #444;
+  }
+  
+  /* Recommendation Section Styles */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .col {
+    padding-left: 15px;
+    padding-right: 15px;
+    flex: 0 0 33.3333%;
+    min-width: 0;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .card-img-top {
   }

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almas Nómadas | Welcome</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="turismo.png" type="image/x-icon" />
+</head>
+<body>
+    <header>
+        
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container"></div>
+        </section>
+          
+        <section id="about">
+            <div class="container">
+                <div class="img-container"></div>
+                <div class="texto">
+            <h2>Sobre nosotros</h2>
+            <p>En Almas Viajeras, creemos que viajar es más que simplemente desplazarse de un lugar a otro. Es una inmersión profunda en culturas desconocidas, una conexión con la naturaleza en toda su majestuosidad y un descubrimiento de uno mismo en cada nuevo destino.
+
+                Somos un equipo apasionado por los viajes y expertos en crear experiencias únicas e inolvidables. Nos especializamos en diseñar itinerarios personalizados que se ajustan a tus intereses, presupuesto y estilo de viaje.</p>
+        </section>
+
+        <section id="services">
+
+            <p>Aquí puedes describir los servicios que ofreces.</p>
+                <div class="container">
+                    <div class="services">
+                        <div class="carta">
+                            <h3>Cerro Otto</h3>
+                            <p>Una de las tantas recomendaciones</p>
+                            <button>+ click</button>
+                        </div>
+                        <div class="carta">
+                            <h3>Bar de Hielo </h3>
+                            <p>Un excelente lugar para conocer</p>
+                            <button>+ Info</button>
+                        </div>
+                        <div class="carta">
+                            <h3>El centro civico</h3>
+                            <p> rodeado de tiendas de chocolate </p>
+                            <button>+ Info</button>
+        </section>
+
+        <section id="recommendation">
+          <p>Nuestros clientes tienen algo de decirte</p>
+            <div class="container"></div>
+            <h2>Recomendaciones</h2>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        </section>
+        <main>
+          <div class="container">
+          
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="turismo.png" class="card-img-top" alt="1">
+                  <div class="card-body">
+                    <h5 class="card-title">Maria</h5>
+                    <p class="card-text">recomiendo esta web.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Último comentario hace segundos</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="turismo.png" class="card-img-top" alt="2">
+                  <div class="card-body">
+                    <h5 class="card-title">Alfredo</h5>
+                    <p class="card-text">Starbuck nespresso house blend 10 casulas solo para maquinas nespresoo
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Última compra hace 15 minutos </small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="images/capsulas-dolce-gusto-lungo.jpg" class="card-img-top" alt="3">
+                  <div class="card-body">
+                    <h5 class="card-title">Ana Maria</h5>
+                    <p class="card-text">Capsulas lungo solo para cafeteras dolce gusto. .</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Última actualización hace 3 minutos</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form id="formularioContacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="asunto">Asunto:</label>
+                <select id="asunto" name="asunto" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="consulta">Consulta general</option>
+                    <option value="reclamo">Reclamo</option>
+                    <option value="sugerencia">Sugerencia</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <label for="medioContacto">Medio de contacto preferido:</label>
+                <div>
+                    <input type="radio" id="medioContactoEmail" name="medioContacto" value="email" checked>
+                    <label for="medioContactoEmail">Correo electrónico</label>
+
+                    <input type="radio" id="medioContactoTelefono" name="medioContacto" value="telefono">
+                    <label for="medioContactoTelefono">Teléfono</label>
+                </div>
+
+                <label for="imagen">Adjuntar imagen:</label>
+                <input type="file" id="imagen" name="imagen">
+
+                <button type="submit">Enviar formulario</button>
+            </form>
+        </section>     
+
+
+       
+
+    <footer>
+                          <div class="footer-col">
+                            </div>
+                          
+                              <p>&copy; 2023 Somos nomodas . Todos los derechos reservados</p>
+                          </div>
+          </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
