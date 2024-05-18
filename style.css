@@ -1,188 +1,394 @@
-*{
-    box-sizing: border-box;
+/*Página Principal*/
+
+.navbar {
+    padding: 3rem;        
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    font-family: sans-serif;
-    margin: 0;
-}
-
-h1{ font-size: 3.5em;}
-h2{ font-size: 2.7em;}
-h3{ font-size: 2em;}
-p{ font-size: 1.25em;}
-ul{ list-style: none;}
-li{ font-size: 1.25em;}
-
-
-
-#about .container{
-    text-align: center;
-    padding: 200px 12px;
-}
-
-#servicios{
-    background-color: rgb(30,30,30);
-    color: white;
-    text-align: center;
-}
-
-#servicios .container{
-    padding: 150px 12px;
-}
-
-#servicios h2{
-    margin-top: 0;
-    font-size: 3.2em;
-}
-
-#servicios p{
-    display: none;
-}
-
-#servicios .carta{
-    background-position: center center;
-    background-size: cover;
-    padding: 50px 0px;
-    margin: 30px;
-    border-radius: 15px;
-}
-
-.carta:first-child{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("turismo.png");
-
-}
-
-.carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("turismo.png");
-}
-
-.carta:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("turismo.png");
-
-}
-
-#formularioContacto {
-    display: flex;
-    flex-direction: column;
+.navbar-collapse {
     align-items: center;
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
+    justify-content: space-between;
+}
 
-  #formularioContacto label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  #formularioContacto input,
-  #formularioContacto select,
-  #formularioContacto textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  #formularioContacto textarea {
-    height: 100px;
-    resize: vertical;
-  }
-  
-  #formularioContacto input[type="radio"] {
-    margin-right: 5px;
-  }
-  
-  #formularioContacto button {
-    background-color: #333;
+.link-verde {
+    color: rgb(15, 169, 15) !important;
+}
+
+.card-superpuesta img{
+    filter: brightness(30%);
+}
+
+.card-img-overlay {
+    padding-right: 8.5rem !important;
+    padding-top: 20% !important;
+    padding-left: 48% !important;
+    height: max-content;
+}
+
+.card-title1, .card-text1, .btn-outline {
     color: white;
-    padding: 10px 20px;
+}
+
+.card-text1 {
+    font-size: 1rem;
+    padding-top: 1.5rem;
+    text-align: justify;
+}
+
+.card-title1 {
+    font-size: 2rem;
+}
+
+.btn-success{
+    background: rgb(14, 151, 14) !important;
+}
+
+.btn-success:hover{
     border: none;
-    border-radius: 3px;
+    background: rgb(9, 72, 9) !important;
+}
+
+
+.card:hover{
+    transform: scale(1.01);
+    background-color: rgb(221, 218, 218);
+    cursor: pointer;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+
+.formulario{
+    padding-top: 5px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.texto-area{
+    font-size: 12px;
+}
+
+.formulario button {
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    background-color: #7fc33b !important;
+    color: whitesmoke;
+}
+
+footer {
+    padding-top: 15px;
+}
+
+.footer-lista{
+    background-image: linear-gradient(to right, #1a4169,
+    #0a4674, #064e74, #1a5c8a, #085fab); 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 6rem;
+}
+
+.footer-link{
+    color: white !important;
+    font-size: 14px !important;
+    padding: 1.5rem 2.5rem !important;
+}
+
+.swal2-popup {
+    width: 50px;
+    }
+
+
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  header {
+    /* Add your header styles here */
+  }
+  
+  /* Main section styles */
+  main {
+    padding-top: 7rem; /* Adjust padding as needed */
+  }
+  
+  /* Hero section styles */
+  #inicio .hero {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  #inicio .hero img {
+    width: 100%;
+    max-height: 400px; /* Adjust image height as needed */
+    object-fit: cover; /* Ensures image fills the container */
+  }
+  
+  .boton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 2rem;
   }
   
-  #formularioContacto button:hover {
-    background-color: #444;
+  .boton:hover {
+    background-color: #0056b3;
   }
   
-  /* Services Section Styles */
-  .services {
+  /* About Us section styles */
+  #sobre nosotros .container {
+    display: flex;
+    flex-wrap: wrap; /* Allows content to wrap if needed */
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  #sobre nosotros .img-container {
+    width: 40%;
+    /* Add styling for the image container */
+  }
+  
+  #sobre nosotros .texto {
+    width: 60%;
+    padding: 1rem;
+  }
+  
+  #sobre nosotros p {
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  /* Recommendations section styles */
+  #recomendaciones {
+    padding: 2rem;
+  }
+  
+  #recomendaciones h2 {
+    color: #333;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  /* Card styles using Bootstrap */
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .card-img-top {
+    height: 150px; /* Adjust image height as needed */
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-footer {
+    text-align: right;
+    font-size: 0.8rem;
+    color: #999;
+  }
+  
+  /* Contact section styles */
+  #contacto {
+    padding: 2rem;
+  }
+  
+  #contacto form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   
-  .carta {
-    width: 30%;
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+  #contacto label {
+    width: 120px;
+    margin-bottom: 0.5rem;
+    display: block;
   }
   
-  .carta h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
+  #contacto input[type="text"],
+  #contacto input[type="email"],
+  #contacto select,
+  #contacto textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
   }
   
-  .carta button {
-    background-color: #333;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+  #contacto textarea {
+    height: 100px; /* Adjust textarea height as needed */
   }
   
-  .carta button:hover {
-    background-color: #444;
-  }
-  
-  /* Recommendation Section Styles */
-  .row {
+  #contacto .medioContacto {
     display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    align-items: center;
+    margin-bottom: 1rem;
   }
   
-  .col {
-    padding-left: 15px;
-    padding-right: 15px;
-    flex: 0 0 33.3333%;
-    min-width: 0;
+  #contacto input[type="radio"] {
+    margin-right: 1rem;
   }
   
-  .card {
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+  #contacto button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
-  .card-img-top {
+  #contacto button[type="submit"]:hover {
+    background-color: #0056b3;
   }
+  
+
+/* Responsive */
+
+
+@media screen and (max-width: 910px) {
+
+    .navbar{
+        position: static !important;
+    }
+
+    .card-superpuesta img{
+        filter: brightness(100%);
+    }
+
+    .tarjeta {
+        padding-right: 8.5rem !important;
+        max-height: 50vh;
+        padding-left: 40vw !important;
+        font-size: 0.5rem;
+    }
+
+    .card-img-overlay {
+        padding: 2rem !important;
+        position: static !important;
+        background-color: black;
+    }
+
+    .card-text1 {
+        font-size: 1rem;
+        padding-top: 0.7rem;
+    }
+    
+    .card-title1 {
+        font-size: 1.5rem;
+    }
+
+    .formulario{
+        padding-top: 5px;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .footer-lista{
+        padding: 0 2rem;
+    }
+
+    .footer-link{
+        padding: 1.5rem 1.5rem !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+  
+
+    .card-text {
+        text-align: center;
+    }
+
+  
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .container-oradores {
+        margin-top: 20px;
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (min-width: 848px) and (min-height: 850px){
+
+    .footer-ticket{
+        position: fixed;
+    }
+}
+
+/* Estilos para el formulario de contacto */
+
+#formularioContacto {
+  width: 500px; /* Ajustar ancho según se desee */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#formularioContacto label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#formularioContacto input,
+#formularioContacto textarea,
+#formularioContacto select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+#formularioContacto textarea {
+  height: 100px;
+}
+
+#formularioContacto button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilos para el footer */
+
+.footer-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-link {
+  margin-right: 20px;
+}

@@ -5,51 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Almas Nómadas | Welcome</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo.css">
     <link rel="icon" href="turismo.png" type="image/x-icon" />
 </head>
 <body>
     <header>
-        
+      <nav>
+          <ul>
+            <nav class="navbar navbar-expand-md bg-body-tertiary px-5 py-2 fixed-top" data-bs-theme="dark">
+              <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                      aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarToggler">
+                          <img id="logo-pagina" src="images/android-chrome-192x192.png" width="100" alt="Logo de la pagina">
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#sobre nosotros ">Sobre mí</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#recomendaciones">Recomendaciones</a> </li>
+              <li><a href="#contacto">Contacto</a></li>
+          </ul>
+      </nav>
     </header>
 
     <main>
-        <section id="home">
+          <section id="inicio" class="section">
+            <div class="hero">
+              <img src="images/joven-barbudo-camisa-rayas_273609-5677.jpg" alt="Hero Image">
+
+            </div>
+            <a href="#contacto" class="boton">¡Contáctame!</a>
+          
             <div class="container"></div>
         </section>
-          
-        <section id="about">
+        <section id="sobre nosotros">
             <div class="container">
                 <div class="img-container"></div>
                 <div class="texto">
-            <h2>Sobre nosotros</h2>
+        
             <p>En Almas Viajeras, creemos que viajar es más que simplemente desplazarse de un lugar a otro. Es una inmersión profunda en culturas desconocidas, una conexión con la naturaleza en toda su majestuosidad y un descubrimiento de uno mismo en cada nuevo destino.
 
                 Somos un equipo apasionado por los viajes y expertos en crear experiencias únicas e inolvidables. Nos especializamos en diseñar itinerarios personalizados que se ajustan a tus intereses, presupuesto y estilo de viaje.</p>
-        </section>
+        </section>            
 
-        <section id="services">
-
-            <p>Aquí puedes describir los servicios que ofreces.</p>
-                <div class="container">
-                    <div class="services">
-                        <div class="carta">
-                            <h3>Cerro Otto</h3>
-                            <p>Una de las tantas recomendaciones</p>
-                            <button>+ click</button>
-                        </div>
-                        <div class="carta">
-                            <h3>Bar de Hielo </h3>
-                            <p>Un excelente lugar para conocer</p>
-                            <button>+ Info</button>
-                        </div>
-                        <div class="carta">
-                            <h3>El centro civico</h3>
-                            <p> rodeado de tiendas de chocolate </p>
-                            <button>+ Info</button>
-        </section>
-
-        <section id="recommendation">
+        <section id="recomendaciones">
           <p>Nuestros clientes tienen algo de decirte</p>
             <div class="container"></div>
             <h2>Recomendaciones</h2>
@@ -62,9 +62,9 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
                 <div class="card h-100">
-                  <img src="turismo.png" class="card-img-top" alt="1">
+                  <img src="images/chico-caucasico-atractivo-seguro-beige-pullon-sonriendo-ampliamente-mientras-esta-pie-contra-gris_176420-44508.jpg" class="card-img-top" alt="1">
                   <div class="card-body">
-                    <h5 class="card-title">Maria</h5>
+                    <h5 class="card-title">Gabriel</h5>
                     <p class="card-text">recomiendo esta web.</p>
                   </div>
                   <div class="card-footer">
@@ -74,10 +74,10 @@
               </div>
               <div class="col">
                 <div class="card h-100">
-                  <img src="turismo.png" class="card-img-top" alt="2">
+                  <img src="images/joven-barbudo-camisa-rayas_273609-5677.jpg" class="card-img-top" alt="2">
                   <div class="card-body">
                     <h5 class="card-title">Alfredo</h5>
-                    <p class="card-text">Starbuck nespresso house blend 10 casulas solo para maquinas nespresoo
+                    <p class="card-text">Usuario resgistrado recientemente
                     </p>
                   </div>
                   <div class="card-footer">
@@ -87,7 +87,7 @@
               </div>
               <div class="col">
                 <div class="card h-100">
-                  <img src="images/capsulas-dolce-gusto-lungo.jpg" class="card-img-top" alt="3">
+                  <img src="images/muy-sonriente-alegremente-femenina-cabello-rubio-vestida-casualmente-mirando-satisfaccion_176420-15187.avif" class="card-img-top" alt="3">
                   <div class="card-body">
                     <h5 class="card-title">Ana Maria</h5>
                     <p class="card-text">Capsulas lungo solo para cafeteras dolce gusto. .</p>
@@ -101,7 +101,7 @@
           </section>
         </main>
 
-        <section id="contact">
+        <section id="contacto">
             <h2>Contacto</h2>
             <form id="formularioContacto">
                 <label for="nombre">Nombre:</label>
@@ -140,14 +140,20 @@
 
        
 
-    <footer>
-                          <div class="footer-col">
-                            </div>
-                          
-                              <p>&copy; 2023 Somos nomodas . Todos los derechos reservados</p>
-                          </div>
-          </footer>
-
-    <script src="script.js"></script>
+        
+        <footer class="container-fluid text-white small text-center bg-gray">    
+          <div class="d-flex justify-content-evenly align-items-center footer-size flex-column flex-sm-row">
+            <a href="#" class="pre-line text-decoration-none text-white">Preguntas 
+              frecuentes</a>
+            <a href="#" class="pre-line text-decoration-none text-white">Contáctanos</a>
+            <a href="#" class="pre-line text-decoration-none text-white">Prensa</a>
+            <a href="#" class="pre-line text-decoration-none text-white">Conferencia</a>
+            <a href="#" class="pre-line text-decoration-none text-white">Términos y 
+              condiciones</a>
+            <a href="#" class="pre-line text-decoration-none text-white">Privacidad</a>
+            <a href="#" class="pre-line text-decoration-none text-white">Estudiantes</a>
+          </div>    
+        </footer> 
+   
 </body>
 </html>

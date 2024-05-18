@@ -1,0 +1,245 @@
+/* Estilos generales */
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header */
+
+header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Responsive - Menú para pantallas pequeñas */
+
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      flex-direction: column;
+      margin-top: 20px;
+  }
+
+  nav li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}
+
+/* Responsive - Ocultar logo en pantallas muy pequeñas */
+
+@media (max-width: 480px) {
+  .logo {
+      display: none;
+  }
+}
+
+/* Estilos para las secciones */
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.boton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+}
+
+.formulario{
+  padding-top: 5px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.texto-area{
+  font-size: 12px;
+}
+
+.formulario button {
+  width: 100%;
+  border: none;
+  font-size: 18px;
+  background-color: #7fc33b !important;
+  color: whitesmoke;
+}
+
+footer {
+  padding-top: 15px;
+}
+
+.footer-lista{
+  background-image: linear-gradient(to right, #1a4169,
+  #0a4674, #064e74, #1a5c8a, #085fab); 
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 6rem;
+}
+
+.footer-link{
+  color: white !important;
+  font-size: 14px !important;
+  padding: 1.5rem 2.5rem !important;
+}
+
+.swal2-popup {
+  width: 50px; 
+}
+
+
+/* Estilos para las tarjetas de recomendaciones */
+
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.carta {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px; /* Ajustar ancho según se desee */
+}
+
+.carta img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+.carta:first-child{
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("images/bar-hielo-bariloche-1.jpg");
+
+}
+
+.carta:nth-child(2){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("images/virginia.webp");
+}
+
+.carta:nth-child(3){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("images/vasos-cafe.webp");
+
+}
+
+
+/* Estilos para el formulario de contacto */
+
+#formularioContacto {
+  width: 500px; /* Ajustar ancho según se desee */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#formularioContacto label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#formularioContacto input,
+#formularioContacto textarea,
+#formularioContacto select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+#formularioContacto textarea {
+  height: 100px;
+}
+
+#formularioContacto button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilos para el footer */
+
+.footer-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-link {
+  margin-right: 20px;
+}
