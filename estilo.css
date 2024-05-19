@@ -8,7 +8,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: #fffafa;
 }
 
 img {
@@ -19,7 +19,7 @@ img {
 /* Header */
 
 header {
-  background-color: #f0f0f0;
+  background-color: #d19e11;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -92,7 +92,7 @@ h2 {
 /* Footer */
 
 footer {
-  background-color: #f0f0f0;
+  background-color: #d19e11;
   text-align: center;
   padding: 20px;
 }
@@ -129,7 +129,7 @@ footer {
 }
 
 .footer-link{
-  color: white !important;
+  color: rgb(33, 184, 133) !important;
   font-size: 14px !important;
   padding: 1.5rem 2.5rem !important;
 }
