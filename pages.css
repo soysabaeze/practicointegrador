@@ -1,0 +1,817 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #65E8E6;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+#main-header {
+  background: url('images/portrait-professional-business-people-working-together.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #fff;
+  padding-top: 160px;
+}
+
+#main-header .logo {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+#main-header h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#main-header p {
+  width: 70%;
+  padding-bottom: 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  flex: 0 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fffafa;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.texto {
+display: flex;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row; /* Horizontal for larger screens */
+}
+
+.nav-toggle {
+  display: none; /* Initially hidden on larger screens */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.icon-bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #333;
+  margin: 5px auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Estilos para las secciones */
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.boton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilos para las secciones */
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.boton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Estilos para las secciones */
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.boton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Footer */
+
+footer {
+  background-color: #d19e11;
+  text-align: center;
+  padding: 20px;
+}
+
+.formulario{
+  padding-top: 5px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.texto-area{
+  font-size: 12px;
+}
+
+.formulario button {
+  width: 100%;
+  border: none;
+  font-size: 18px;
+  background-color: #7fc33b !important;
+  color: whitesmoke;
+}
+
+footer {
+  padding-top: 15px;
+}
+
+.footer-lista{
+  background-image: linear-gradient(to right, #1a4169,
+  #0a4674, #064e74, #1a5c8a, #085fab); 
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 6rem;
+}
+
+.footer-link{
+  color: rgb(33, 184, 133) !important;
+  font-size: 14px !important;
+  padding: 1.5rem 2.5rem !important;
+}
+
+.swal2-popup {
+  width: 50px; 
+}
+
+
+/* Estilos para las tarjetas de recomendaciones */
+
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ 
+.services {
+  padding: 20px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.service h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* Estilos para el formulario de contacto */
+
+#formularioContacto {
+  width: 500px; /* Ajustar ancho según se desee */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#formularioContacto label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#formularioContacto input,
+#formularioContacto textarea,
+#formularioContacto select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+#formularioContacto textarea {
+  height: 100px;
+}
+
+#formularioContacto button {
+  background-color: #3a5f42;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-link {
+  margin-right: 20px;
+}
+
+
+footer {
+  background-color: #00C7C7; /* Turquesa */
+  text-align: center;
+  padding: 20px;
+}
+
+.formulario{
+  padding-top: 5px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.texto-area{
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  /* Estilos específicos para pantallas de celular */
+  .container {
+    max-width: 100%; /* El contenedor ocupa todo el ancho */
+    padding: 20px; /* Añadir espacio interno */
+  }
+
+  .main-content {
+    margin-bottom: 20px; /* Espacio entre contenido y elementos inferiores */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Estilos específicos para pantallas de tablet */
+  .container {
+    max-width: 960px; /* Ancho máximo para el contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+  }
+
+  
+  .main-content {
+    width: 100%; /* El contenido principal ocupa todo el ancho */
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Estilos específicos para pantallas de escritorio */
+  .container {
+    max-width: 1200px; /* Ancho máximo para el contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+  }
+
+  .main-content {
+    width: 70%; /* Ancho del contenido principal */
+    margin-left: 30%; /* Espacio para el sidebar */
+  }
+}
+
+/* PANTALLAS GRANDES */
+@media screen and (max-width:1920px) {
+    
+} 
+
+/* TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    h2{
+        font-size: 3vw;
+    }
+   
+    #banner{
+        height: 400px;
+    }
+    
+    .container{
+        max-width: 720px;
+    }
+    .card-banner{
+        padding: 0px 75px;
+    }
+   
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+/* CELULARES */
+@media screen and (max-width: 767px) {
+    h2{
+        font-size: 3vw;
+    }
+
+    }
+    #banner{
+        height: 300px;
+    }
+   
+    .container{
+        max-width: 420px;
+    }
+    .card-banner{
+        padding: 0px 50px;
+    }
+    
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #footer a{
+        padding: 2px 0px;
+    }
+
+.hero p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.logo {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  flex: 0 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fffafa;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.texto {
+display: flex;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row; /* Horizontal for larger screens */
+}
+
+.nav-toggle {
+  display: none; /* Initially hidden on larger screens */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.icon-bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #333;
+  margin: 5px auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Estilos para las secciones */
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.boton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilos para las secciones */
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.boton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Estilos para las secciones */
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.boton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Footer */
+
+footer {
+  background-color: #d19e11;
+  text-align: center;
+  padding: 20px;
+}
+
+.formulario{
+  padding-top: 5px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.texto-area{
+  font-size: 12px;
+}
+
+.formulario button {
+  width: 100%;
+  border: none;
+  font-size: 18px;
+  background-color: #7fc33b !important;
+  color: whitesmoke;
+}
+
+footer {
+  padding-top: 15px;
+}
+
+.footer-lista{
+  background-image: linear-gradient(to right, #1a4169,
+  #0a4674, #064e74, #1a5c8a, #085fab); 
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 6rem;
+}
+
+.footer-link{
+  color: rgb(33, 184, 133) !important;
+  font-size: 14px !important;
+  padding: 1.5rem 2.5rem !important;
+}
+
+.swal2-popup {
+  width: 50px; 
+}
+
+
+/* Estilos para las tarjetas de recomendaciones */
+
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ 
+.services {
+  padding: 20px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.service h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* Estilos para el formulario de contacto */
+
+#formularioContacto {
+  width: 500px; /* Ajustar ancho según se desee */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#formularioContacto label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#formularioContacto input,
+#formularioContacto textarea,
+#formularioContacto select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+#formularioContacto textarea {
+  height: 100px;
+}
+
+#formularioContacto button {
+  background-color: #3a5f42;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-link {
+  margin-right: 20px;
+}
+
+
+footer {
+  background-color: #00C7C7; /* Turquesa */
+  text-align: center;
+  padding: 20px;
+}
+
+.formulario{
+  padding-top: 5px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.texto-area{
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  /* Estilos específicos para pantallas de celular */
+  .container {
+    max-width: 100%; /* El contenedor ocupa todo el ancho */
+    padding: 20px; /* Añadir espacio interno */
+  }
+
+  .main-content {
+    margin-bottom: 20px; /* Espacio entre contenido y elementos inferiores */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Estilos específicos para pantallas de tablet */
+  .container {
+    max-width: 960px; /* Ancho máximo para el contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+  }
+
+  
+  .main-content {
+    width: 100%; /* El contenido principal ocupa todo el ancho */
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Estilos específicos para pantallas de escritorio */
+  .container {
+    max-width: 1200px; /* Ancho máximo para el contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+  }
+
+  .main-content {
+    width: 70%; /* Ancho del contenido principal */
+    margin-left: 30%; /* Espacio para el sidebar */
+  }
+}
+
+/* PANTALLAS GRANDES */
+@media screen and (max-width:1920px) {
+    
+} 
+
+/* TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    h2{
+        font-size: 3vw;
+    }
+   
+    #banner{
+        height: 400px;
+    }
+    
+    .container{
+        max-width: 720px;
+    }
+    .card-banner{
+        padding: 0px 75px;
+    }
+   
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+/* CELULARES */
+@media screen and (max-width: 767px) {
+    h2{
+        font-size: 3vw;
+    }
+
+    }
+    #banner{
+        height: 300px;
+    }
+   
+    .container{
+        max-width: 420px;
+    }
+    .card-banner{
+        padding: 0px 50px;
+    }
+    
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #footer a{
+        padding: 2px 0px;
+    }

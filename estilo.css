@@ -1,10 +1,46 @@
-/* Estilos generales */
-
-body {
-  background-color: #65E8E6; /* Color gris claro para el fondo de la página */
+*{
+  box-sizing: border-box;
+}
+.body {
+  background-color: #007bff;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+}
+
+#main-header {
+  background: url('images/portrait-professional-business-people-working-together.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #fff;
+  padding-top: 160px;
+}
+
+#main-header .logo {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+#main-header h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#main-header p {
+  width: 70%;
+  padding-bottom: 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  flex: 0 0 auto;
 }
 
 a {
@@ -17,21 +53,14 @@ img {
   height: auto;
 }
 
-/* Header */
-
-header {
-  background-color: #F0F0F0; /* Adjust background color */
-  padding: 10px 20px; /* Adjust padding */
+.texto {
+display: flex;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.logo {
-  flex: 0 0 auto;
 }
 
 .navigation {
@@ -62,29 +91,6 @@ header {
   margin: 5px auto;
 }
 
-/* Media query for smaller screens (adjust as needed) */
-@media (max-width: 768px) {
-  .nav-list 
-    flex-direction: column; /* Stack vertically for mobile */
-    position: absolute;
-    top: 100%; /* Position off-screen initially */
-    left: 0;
-    width: 100%;
-    background-color: ;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
-}
-
-.hero p {
-  font-size: 20px;
-  margin-top: 20px;
-}
-
-.logo {
-  text-decoration: none;
-  color: #333;
-}
-
 nav ul {
   list-style: none;
   margin: 0;
@@ -94,33 +100,6 @@ nav ul {
 nav li {
   display: inline-block;
   margin-right: 20px;
-}
-
-/* Responsive - Menú para pantallas pequeñas */
-
-@media (max-width: 768px) {
-  header {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  nav ul {
-      flex-direction: column;
-      margin-top: 20px;
-  }
-
-  nav li {
-      margin-right: 0;
-      margin-bottom: 10px;
-  }
-}
-
-/* Responsive - Ocultar logo en pantallas muy pequeñas */
-
-@media (max-width: 480px) {
-  .logo {
-      display: none;
-  }
 }
 
 /* Estilos para las secciones */
@@ -142,6 +121,48 @@ h2 {
   color: white;
   text-decoration: none;
 }
+
+/* Estilos para las secciones */
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.boton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Estilos para las secciones */
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.boton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+}
+
 
 /* Footer */
 
@@ -238,53 +259,6 @@ footer {
   margin-top: 15px;
 }
 
-
-.carta {
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 10px;
-  padding: 20px;
-  text-align: center;
-  width: 300px; /* Ajustar ancho según se desee */
-}
-
-.carta img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-
-.carta:first-child{
-  background-image: linear-gradient(
-      0deg,
-      rgba(0,0,0,0.5),
-      rgba(0,0,0,0.5)
-  )
-  ,url("images/bar-hielo-bariloche-1.jpg");
-
-}
-
-.carta:nth-child(2){
-  background-image: linear-gradient(
-      0deg,
-      rgba(0,0,0,0.5),
-      rgba(0,0,0,0.5)
-  )
-  ,url("images/virginia.webp");
-}
-
-.carta:nth-child(3){
-  background-image: linear-gradient(
-      0deg,
-      rgba(0,0,0,0.5),
-      rgba(0,0,0,0.5)
-  )
-  ,url("images/vasos-cafe.webp");
-
-}
-
-
 /* Estilos para el formulario de contacto */
 
 #formularioContacto {
@@ -314,7 +288,7 @@ footer {
 }
 
 #formularioContacto button {
-  background-color: #007bff;
+  background-color: #3a5f42;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -322,16 +296,119 @@ footer {
   cursor: pointer;
 }
 
-/* Estilos para el footer */
-
-.footer-lista {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
 .footer-link {
   margin-right: 20px;
 }
+
+
+footer {
+  background-color: #00C7C7; /* Turquesa */
+  text-align: center;
+  padding: 20px;
+}
+
+.formulario{
+  padding-top: 5px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.texto-area{
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  /* Estilos específicos para pantallas de celular */
+  .container {
+    max-width: 100%; /* El contenedor ocupa todo el ancho */
+    padding: 20px; /* Añadir espacio interno */
+  }
+
+  .main-content {
+    margin-bottom: 20px; /* Espacio entre contenido y elementos inferiores */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Estilos específicos para pantallas de tablet */
+  .container {
+    max-width: 960px; /* Ancho máximo para el contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+  }
+
+  
+  .main-content {
+    width: 100%; /* El contenido principal ocupa todo el ancho */
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Estilos específicos para pantallas de escritorio */
+  .container {
+    max-width: 1200px; /* Ancho máximo para el contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+  }
+
+  .main-content {
+    width: 70%; /* Ancho del contenido principal */
+    margin-left: 30%; /* Espacio para el sidebar */
+  }
+}
+
+/* PANTALLAS GRANDES */
+@media screen and (max-width:1920px) {
+    
+} 
+
+/* TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    h2{
+        font-size: 3vw;
+    }
+   
+    #banner{
+        height: 400px;
+    }
+    
+    .container{
+        max-width: 720px;
+    }
+    .card-banner{
+        padding: 0px 75px;
+    }
+   
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+/* CELULARES */
+@media screen and (max-width: 767px) {
+    h2{
+        font-size: 3vw;
+    }
+
+    }
+    #banner{
+        height: 300px;
+    }
+   
+    .container{
+        max-width: 420px;
+    }
+    .card-banner{
+        padding: 0px 50px;
+    }
+    
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #footer a{
+        padding: 2px 0px;
+    }

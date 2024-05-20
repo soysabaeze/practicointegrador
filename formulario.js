@@ -3,8 +3,8 @@ const formulario = document.getElementById('formularioContacto');
 formulario.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const nombre = document.getElementById('nombre').value;
-    const email = document.getElementById('email').value;
+    const nombre = document.querySelector('input[name="nombre"]')
+    const email = document.getElementById('input').value;
     const asunto = document.getElementById('asunto').value;
     const mensaje = document.getElementById('mensaje').value;
     const medioContacto = document.querySelector('input[name="medioContacto"]:checked').value;
