@@ -2,15 +2,34 @@
   box-sizing: border-box;
 }
 .body {
-  background-color: #5DC1B9;
+  background-color: #30D5C8;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
 }
 
-header {
-  background-color: #f0f0f0;
-  padding: 20px 0;
+#main-header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #fff;
+  padding-top: 160px;
+}
+
+#main-header .logo {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+#main-header h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#main-header p {
+  width: 70%;
+  padding-bottom: 40px;
 }
 
 .container {
@@ -82,6 +101,12 @@ nav li {
   margin-right: 20px;
 }
 
+.card {
+  background-color: #d1c7c7; /* Color de fondo blanco por defecto */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
 /* Estilos para las secciones */
 
 section {
@@ -102,61 +127,89 @@ h2 {
   text-decoration: none;
 }
 
-/* Section styles */
-#servicios {
-  padding: 50px 0;
+
+/* Estilos para las tarjetas de recomendaciones */
+
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ 
+.services {
+  padding: 20px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-#servicios h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
+.service img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
 }
 
-
-/* Hover effect for buttons */
-.service .button:hover {
-  background-color: #0056b3;
+.service h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-
-
-.swal2-popup {
-  width: 50px; 
+.service p {
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-
+.button {
+  background-color: #3a5f42;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
 
 /* Estilos para el formulario de contacto */
 
-#formularioContacto {
-  width: 500px; /* Ajustar ancho según se desee */
+/* Basic form styling */
+.container {
+  width: 80%;
   margin: 0 auto;
   padding: 20px;
 }
 
-#formularioContacto label {
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+label {
   display: block;
   margin-bottom: 5px;
 }
 
-#formularioContacto input,
-#formularioContacto textarea,
-#formularioContacto select {
-  width: 100%;
+input[type="text"],
+input[type="email"],
+textarea,
+select {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  width: 100%;
 }
 
-#formularioContacto textarea {
+textarea {
   height: 100px;
 }
 
-#formularioContacto button {
-  background-color: #3a5f42;
+button[type="submit"] {
+  background-color: #007bff;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -164,11 +217,20 @@ h2 {
   cursor: pointer;
 }
 
+/* Error styling */
+.error {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
 
 .footer-link {
   margin-right: 20px;
 }
-
 
 footer {
   background-color: #00C7C7; /* Turquesa */
@@ -176,13 +238,43 @@ footer {
   padding: 20px;
 }
 
-.formulario{
-  padding-top: 5px;
-  margin: 0 auto;
-  width: 50%;
-}
-
 .texto-area{
   font-size: 12px;
+}
+
+.container {
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas con ancho máximo de 768px (por ejemplo, tablets) */
+  .sidebar {
+    display: none; /* Ocultar la barra lateral en tablets */
+  }
+}
+
+@media (min-width: 992px) {
+  /* Estilos para pantallas con ancho mínimo de 992px (por ejemplo, PCs) */
+  .main-content {
+    width: 70%; /* Mayor ancho para el contenido principal en PCs */
+  }
+}
+
+@media (max-width: 600px) {
+  /* Estilos para pantallas con ancho máximo de 600px (smartphones) */
+  body {
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    line-height: 1.6; /* Mayor espacio entre líneas para mejor legibilidad */
+  }
+
+  .container {
+    width: 95%; /* Ancho de contenedor más grande */
+    margin: 0 auto; /* Centrar el contenido */
+  }
+
+  img {
+    max-width: 100%; /* Ajustar el tamaño de las imágenes al contenedor */
+    height: auto; /* Mantener la proporción de las imágenes */
+  }
 }
 
