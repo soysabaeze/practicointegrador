@@ -1,59 +1,65 @@
-function validateContactForm() {
-    const nombreInput = document.querySelector('input[name="nombre"]');
-    const emailInput = document.querySelector('input[name="email"]');
-    const mensajeTextarea = document.querySelector('textarea[name="mensaje"]');
-    const interesadoCheckbox = document.querySelector('input[name="interesado"]');
-    const temaSelect = document.querySelector('select[name="tema"]');
-    const fotoInput = document.querySelector('input[name="foto"]');
-  
-    // Validar nombre
-    if (!nombreInput.value) {
-      alert('El campo "Nombre" es obligatorio.');
-      nombreInput.focus();
-      return false;
-    }
-  
-    // Validar email
-    if (!emailInput.value || !validateEmail(emailInput.value)) {
-      alert('Ingresa un correo electrónico válido.');
-      emailInput.focus();
-      return false;
-    }
-  
-    // Validar mensaje
-    if (!mensajeTextarea.value) {
-      alert('El campo "Mensaje" es obligatorio.');
-      mensajeTextarea.focus();
-      return false;
-    }
-  
-    // Validar checkbox
-    if (!interesadoCheckbox.checked) {
-      alert('Debes seleccionar que estás interesado/a en las conferencias.');
-      interesadoCheckbox.focus();
-      return false;
-    }
-  
-    // Validar tema
-    if (!temaSelect.value) {
-      alert('Selecciona un tema de interés.');
-      temaSelect.focus();
-      return false;
-    }
-  
-    // Validar imagen (opcional)
-    if (fotoInput.files && !fotoInput.files[0].type.startsWith('image/')) {
-      alert('Solo se permiten imágenes.');
-      fotoInput.focus();
-      return false;
-    }
-  
-    // Si todas las validaciones pasan, retorna true para enviar el formulario
-    return true;
+const formContact = document.querySelector("#formContact"); // Assuming your form has an ID "formContact"
+
+const clearValidations = () => {
+  // Remove error classes and messages from all fields
+  document.querySelector("#nombre").classList.remove("error");
+  document.querySelector("#email").classList.remove("error");
+  document.querySelector("#comentario").classList.remove("error");
+  document.querySelector("#tema").classList.remove("error");
+  document.querySelector("#error-message").textContent = ""; // Assuming you have an element with ID "error-message" for error display
+};
+
+const validateContactForm = (event) => {
+  event.preventDefault(); // Prevent default form submission
+
+  clearValidations(); // Clear previous validation errors
+
+  const nombre = document.querySelector("#nombre");
+  const email = document.querySelector("#email");
+  const comentario = document.querySelector("#comentario");
+  const tema = document.querySelector("#tema");
+  const medioContacto = document.querySelectorAll('input[name="medioContacto"]:checked'); // Get selected radio button
+
+  let isValid = true; // Flag to track validation status
+
+  if (!nombre.value.trim()) {
+    nombre.classList.add("error");
+    document.querySelector("#error-message").textContent = "El campo 'Nombre' es obligatorio";
+    isValid = false;
   }
-  
-  function validateEmail(email) {
-    const re = /^(([^<>()\[\]\\.,;:\s@"]+)(\.[^<>()\[\]\\.,;:\s@"]+)*)@(([^<>()\[\]\\.,;:\s@"]+)(\.[^<>()\[\]\\.,;:\s@"]+)*)$/;
-    return re.test(email);
+
+  if (!email.value.trim()) {
+    email.classList.add("error");
+    document.querySelector("#error-message").textContent = "El campo 'Correo electrónico' es obligatorio";
+    isValid = false;
+  } else if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
+    // Check for valid email format
+    email.classList.add("error");
+    document.querySelector("#error-message").textContent = "Ingrese un correo electrónico válido";
+    isValid = false;
   }
-  
+
+  if (!comentario.value.trim()) {
+    comentario.classList.add("error");
+    document.querySelector("#error-message").textContent = "El campo 'Comentario' es obligatorio";
+    isValid = false;
+  }
+
+  if (tema.value === "") {
+    tema.classList.add("error");
+    document.querySelector("#error-message").textContent = "Seleccione un tema de interés";
+    isValid = false;
+  }
+
+  if (medioContacto.length === 0) {
+    document.querySelector("#error-message").textContent = "Seleccione un medio de contacto";
+    isValid = false;
+  }
+
+  if (isValid) {
+    
+    console.log("Formulario enviado correctamente");
+  }
+};
+
+formContact.addEventListener("submit", validateContactForm); 

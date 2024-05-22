@@ -40,7 +40,7 @@
       <section id="inicio" class="d-flex justify-content-center align-items-center">
         <div class="banner-content text-center">
           <h1>Viaja a los mejores destinos del planeta con la mejor atención y al mejor precio.</h1>
-          <a href="#" class="btn btn-primary">Ver más</a>
+
         </div>
   
     </section>
@@ -181,41 +181,49 @@
         <section id="contacto" style="background-color: bisque;">
           
             <h2>Contacto</h2>
-            <form onsubmit="return validateContactForm()">
+            <form id="formContact" onsubmit="return validateContactForm()">
               <label for="nombre">Nombre:</label>
               <input type="text" id="nombre" name="nombre" required>
-        
+          
               <label for="email">Correo electrónico:</label>
               <input type="email" id="email" name="email" required>
-        
-              <label for="mensaje">Mensaje:</label>
-              <textarea id="mensaje" name="mensaje" required></textarea>
-        
-              <label for="interesado">¿Está interesado/a en las conferencias?</label>
-              <input type="checkbox" id="interesado" name="interesado" required>
-        
+          
+              <label for="comentario">Comentario:</label>
+              <textarea id="comentario" name="comentario" required></textarea>
+          
               <label for="tema">Tema de interés:</label>
               <select id="tema" name="tema" required>
                 <option value="">Seleccione...</option>
-                <option value="conferencia1">Conferencia 1</option>
-                <option value="conferencia2">Conferencia 2</option>
-                <option value="conferencia3">Conferencia 3</option>
+                <option value="consulta">Consulta</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="reclamo">Reclamo</option>
               </select>
-        
-              <label for="foto">Foto (opcional):</label>
-              <input type="file" id="foto" name="foto">
-        
-              <button type="submit">Enviar</button>
+          
+              <label for="medioContacto">¿Cómo prefiere ser contactado?</label>
+              <div class="medios-contacto">
+                <input type="radio" id="emailContacto" name="medioContacto" value="email" checked>
+                <label for="emailContacto">Correo electrónico</label>
+          
+                <input type="radio" id="telefonoContacto" name="medioContacto" value="telefono">
+                <label for="telefonoContacto">Teléfono</label>
+              </div>
+          
+              <label for="archivo">Adjuntar archivo:</label>
+              <input type="file" id="archivo" name="archivo">
+          
+              <button type="submit">Enviar formulario</button>
+          
+              <p id="error-message"></p> </form>
             </form>
           </div>
         
-          <script src="script.js"></script>
+          <script src="formulario.js"></script>
             </form>
         </section>     
 
         <footer class="container-fluid text-white small text-center bg-gray">    
           <div class="d-flex justify-content-evenly align-items-center footer-size flex-column flex-sm-row">
-            <a href="#" class="pre-line text-decoration-none text-white">Preguntas 
+            <a href="others.html" class="pre-line text-decoration-none text-white">Preguntas 
               frecuentes</a>
             <a href="#" class="pre-line text-decoration-none text-white">Contáctanos</a>
             <a href="#" class="pre-line text-decoration-none text-white">Prensa</a>

@@ -180,59 +180,74 @@ h2 {
   cursor: pointer;
   margin-top: 15px;
 }
-
-/* Estilos para el formulario de contacto */
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-}
-
+/* Estilos generales del formulario */
 form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
 }
 
+/* Estilos para las etiquetas */
 label {
-  display: block;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
+/* Estilos para los campos de texto, email y textarea */
 input[type="text"],
 input[type="email"],
-textarea,
-select {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 15px;
-  width: 100%;
-}
-
 textarea {
-  height: 100px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
 }
 
-button[type="submit"] {
+/* Estilos para el select */
+select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Estilos para los radio buttons */
+.medios-contacto {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.medios-contacto label {
+  margin-right: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Estilos para el botón de envío */
+button {
+  padding: 10px 20px;
   background-color: #3a5f42;
   color: white;
-  padding: 10px 20px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
 }
 
-/* Error */
-.error {
-  border: 1px solid red;
+button:hover {
+  background-color: #3a5f42;
 }
 
-.error-message {
+/* Estilos para el mensaje de error */
+#error-message {
   color: red;
-  font-size: 0.9em;
-  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* Estilos para los campos con error */
+.error {
+  border: 1px solid red;
 }
 
 .footer-link {

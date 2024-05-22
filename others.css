@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  .body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos generales para el encabezado */
+  .header {
+    
+    padding: 20px 0; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+    
+  .container {
+    max-width: 1000px; 
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  
+  .navigation {
+    display: flex; 
+  }
+  
+  .nav-list {
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  .nav-list li {
+    margin-left: 20px; 
+  }
+  
+  .nav-list a {
+    text-decoration: none; 
+    color: #333; 
+    transition: color 0.3s ease; 
+  }
+  
+  .nav-list a:hover {
+    color: #007bff; /
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fffafa;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .texto {
+  display: flex;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navigation {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list {
+    display: flex;
+    flex-direction: row; 
+  }
+  
+  .nav-toggle {
+    display: none; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  /* Estilos generales */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.preguntas {
+  list-style: none;
+  padding: 0;
+}
+
+.preguntas li {
+  margin-bottom: 10px;
+}
+
+.preguntas a {
+  text-decoration: none;
+  color: #333;
+}
+
+.preguntas a:hover {
+  color: #007bff;
+}
+
+.respuestas {
+  margin-top: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+/* Estilos para la sección de viajes de estudiantes */
+.pregunta3 { /* "Viajes de estudiantes" */
+  background-color: #f0f8ff; 
+  padding: 20px;
+  border-radius: 5px;/* Bordes redondeados */
+  margin-bottom: 20px;
+}
+
+.pregunta3 p { /* Parrafos */
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  margin-right: 20px;
+}
+
+footer {
+  background-color: #00C7C7; /* Turquesa */
+  text-align: center;
+  padding: 20px;
+}
+
+.texto-area{
+  font-size: 12px;
+}
+
+.container {
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas con ancho máximo de 768px (por ejemplo, tablets) */
+  .sidebar {
+    display: none; /* Ocultar la barra lateral en tablets */
+  }
+}
+
+@media (min-width: 992px) {
+  /* Estilos para pantallas con ancho mínimo de 992px (por ejemplo, PCs) */
+  .main-content {
+    width: 70%; /* Mayor ancho para el contenido principal en PCs */
+  }
+}
+
+@media (max-width: 600px) {
+  /* Estilos para pantallas con ancho máximo de 600px (smartphones) */
+  body {
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    line-height: 1.6; /* Mayor espacio entre líneas para mejor legibilidad */
+  }
+
+  .container {
+    width: 95%; /* Ancho de contenedor más grande */
+    margin: 0 auto; /* Centrar el contenido */
+  }
+
+  img {
+    max-width: 100%; /* Ajustar el tamaño de las imágenes al contenedor */
+    height: auto; /* Mantener la proporción de las imágenes */
+  }
+}
+
