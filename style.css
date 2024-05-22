@@ -1,45 +1,54 @@
 *{
   box-sizing: border-box;
 }
+
 .body {
-  background-color: #30D5C8;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
 }
 
-#main-header {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  color: #fff;
-  padding-top: 160px;
+/* Estilos generales para el encabezado */
+.header {
+  background-color: bisque; 
+  padding: 20px 0; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
-#main-header .logo {
-  font-size: 32px;
-  text-transform: uppercase;
-}
-
-#main-header h1 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-#main-header p {
-  width: 70%;
-  padding-bottom: 40px;
+.navbar {
+  border-bottom-color: #00C7C7; 
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  max-width: 1000px; 
+  margin: 0 auto; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
 }
 
-.logo {
-  flex: 0 0 auto;
+.navigation {
+  display: flex; 
+}
+
+.nav-list {
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+}
+
+.nav-list li {
+  margin-left: 20px; 
+}
+
+.nav-list a {
+  text-decoration: none; 
+  color: #333; 
+  transition: color 0.3s ease; 
+}
+
+.nav-list a:hover {
+  color: #007bff; /
 }
 
 a {
@@ -71,11 +80,11 @@ display: flex;
 
 .nav-list {
   display: flex;
-  flex-direction: row; /* Horizontal for larger screens */
+  flex-direction: row; 
 }
 
 .nav-toggle {
-  display: none; /* Initially hidden on larger screens */
+  display: none; 
   background: none;
   border: none;
   cursor: pointer;
@@ -102,9 +111,9 @@ nav li {
 }
 
 .card {
-  background-color: #d1c7c7; /* Color de fondo blanco por defecto */
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  background-color: #d1c7c7; 
+  border-radius: 10px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /
 }
 
 /* Estilos para las secciones */
@@ -126,7 +135,6 @@ h2 {
   color: white;
   text-decoration: none;
 }
-
 
 /* Estilos para las tarjetas de recomendaciones */
 
@@ -175,7 +183,6 @@ h2 {
 
 /* Estilos para el formulario de contacto */
 
-/* Basic form styling */
 .container {
   width: 80%;
   margin: 0 auto;
@@ -209,7 +216,7 @@ textarea {
 }
 
 button[type="submit"] {
-  background-color: #007bff;
+  background-color: #3a5f42;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -217,7 +224,7 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-/* Error styling */
+/* Error */
 .error {
   border: 1px solid red;
 }

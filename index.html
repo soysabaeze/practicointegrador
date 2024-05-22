@@ -10,23 +10,32 @@
 </head>
 <body>
   <header class="header">
-    <div class="container">
-      <a href="#" class="logo">
-       
-      <nav class="navigation">
-        <ul class="nav-list">
-
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#nosotros">Nosotros </a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#recomendaciones">Recomendaciones</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Almas Nómadas</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#inicio">Inicio</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#nosotros">Nosotros</a></li>
+              <a class="nav-link" href="#servicios">Servicios</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#recomendaciones">Recomendaciones</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto">Contacto</a> </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Comprar</a>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-    </div>
-  </header>
-  
-
+    
     <main>
       <section id="inicio" class="d-flex justify-content-center align-items-center">
         <div class="banner-content text-center">
@@ -41,7 +50,7 @@
                 <div class="img-container"></div>
                 <div class="texto">
         
-            <p>En Almas Viajeras, creemos que viajar es más que simplemente desplazarse de un lugar a otro. Es una inmersión profunda en culturas desconocidas, una conexión con la naturaleza en toda su majestuosidad y un descubrimiento de uno mismo en cada nuevo destino.
+            <p>En Almas Nómadas, creemos que viajar es más que simplemente desplazarse de un lugar a otro. Es una inmersión profunda en culturas desconocidas, una conexión con la naturaleza en toda su majestuosidad y un descubrimiento de uno mismo en cada nuevo destino.
 
                 Somos un equipo apasionado por los viajes y expertos en crear experiencias únicas e inolvidables. Nos especializamos en diseñar itinerarios personalizados que se ajustan a tus intereses, presupuesto y estilo de viaje.</p>
         </section>            
@@ -54,21 +63,21 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="images/skyairline_skyairline_image_154.jpeg" class="d-block w-100" alt="1">
+              <img src="images/bariloche.png" class="d-block w-100" alt="1">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Bariloche, Río Negro</h5>
                 <p>Un clásico del turismo argentino, Bariloche es un destino ideal para los amantes de la naturaleza y los deportes de invierno. En invierno, se puede esquiar y practicar snowboard en el Cerro Catedral, mientras que en verano se puede disfrutar de trekking, paseos en barco por el lago Nahuel Huapi y visitas a parques nacionales..</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="images/skyairline_skyairline_image_154.jpeg" class="d-block w-100" alt="2">
+              <img src="images/perito moreno.jpeg" class="d-block w-100" alt="2">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Glaciar Perito Moreno, Santa Cruz</h5>
                 <p>Una de las maravillas naturales del mundo, el Glaciar Perito Moreno se encuentra en el Parque Nacional Los Glaciares, Santa Cruz. Impresiona por su imponente pared de hielo de 70 metros de altura y sus desprendimientos, conocidos como "tronadas". Se pueden realizar caminatas sobre el glaciar, navegaciones en barco y visitas a miradores para observarlo desde diferentes perspectivas.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="skyairline_skyairline_image_154.jpeg" class="d-block w-100" alt="3">
+              <img src="images/ushuaia.jpeg" class="d-block w-100" alt="3">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Ushuaia, Tierra del Fuego</h5>
                 <p>La ciudad más austral del mundo, Ushuaia, ofrece una experiencia única en Tierra del Fuego. Se puede visitar el Fin del Mundo, realizar excursiones al Parque Nacional Tierra del Fuego, navegar por el Canal Beagle y disfrutar de la gastronomía local, como el cordero patagónico y la centolla .</p>
@@ -169,7 +178,7 @@
           </section>
         </main>
 
-        <section id="recomendaciones" style="background-color: bisque;">
+        <section id="contacto" style="background-color: bisque;">
           
             <h2>Contacto</h2>
             <form onsubmit="return validateContactForm()">
