@@ -1,0 +1,302 @@
+*{
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos generales para el encabezado */
+.header {
+  background-color: bisque; 
+  padding: 20px 0; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar {
+  border-bottom-color: #00C7C7; 
+}
+
+.container {
+  max-width: 1000px; 
+  margin: 0 auto; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.navigation {
+  display: flex; 
+}
+
+.nav-list {
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+}
+
+.nav-list li {
+  margin-left: 20px; 
+}
+
+.nav-list a {
+  text-decoration: none; 
+  color: #333; 
+  transition: color 0.3s ease; 
+}
+
+.nav-list a:hover {
+  color: #007bff; /
+}
+
+a {
+  text-decoration: none;
+  color: #fffafa;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.texto {
+display: flex;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row; 
+}
+
+.nav-toggle {
+  display: none; 
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.icon-bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #333;
+  margin: 5px auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.card {
+  background-color: #d1c7c7; 
+  border-radius: 10px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /
+}
+
+/* Estilos para las secciones */
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.boton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #3a5f42;
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilos para las tarjetas de recomendaciones */
+
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ 
+.services {
+  padding: 20px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.service h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.button {
+  background-color: #3a5f42;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+/* Estilos generales del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Estilos para las etiquetas */
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Estilos para los campos de texto, email y textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Estilos para el select */
+select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Estilos para los radio buttons */
+.medios-contacto {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.medios-contacto label {
+  margin-right: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Estilos para el botón de envío */
+button {
+  padding: 10px 20px;
+  background-color: #3a5f42;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3a5f42;
+}
+
+/* Estilos para el mensaje de error */
+#error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Estilos para los campos con error */
+.error {
+  border: 1px solid red;
+}
+
+.footer-link {
+  margin-right: 20px;
+}
+
+footer {
+  background-color: #00C7C7; /* Turquesa */
+  text-align: center;
+  padding: 20px;
+}
+
+.texto-area{
+  font-size: 12px;
+}
+
+.container {
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas con ancho máximo de 768px (por ejemplo, tablets) */
+  .sidebar {
+    display: none; /* Ocultar la barra lateral en tablets */
+  }
+}
+
+@media (min-width: 992px) {
+  /* Estilos para pantallas con ancho mínimo de 992px (por ejemplo, PCs) */
+  .main-content {
+    width: 70%; /* Mayor ancho para el contenido principal en PCs */
+  }
+}
+
+@media (max-width: 600px) {
+  /* Estilos para pantallas con ancho máximo de 600px (smartphones) */
+  body {
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    line-height: 1.6; /* Mayor espacio entre líneas para mejor legibilidad */
+  }
+
+  .container {
+    width: 95%; /* Ancho de contenedor más grande */
+    margin: 0 auto; /* Centrar el contenido */
+  }
+
+  img {
+    max-width: 100%; /* Ajustar el tamaño de las imágenes al contenedor */
+    height: auto; /* Mantener la proporción de las imágenes */
+  }
+}
+

@@ -1,0 +1,50 @@
+<form action="" id="form-contacto">
+ <div class="d-flex">
+<div class="form-control d-flex-column">
+<label for="nombre">Nombre</label>
+ <input type="text" class="input-search" name="nombre" id="nombre">
+</div>
+ <div class="form-control d-flex-column">
+ <label for="email">Email</label>
+ <input type="email" class="input-search" name="email" id="email">
+ </div>
+<div class="form-control d-flex-column">
+ <label for="comentario">Comentario</label>
+ <textarea class="input-search" name="comentario" id="comentario"></textarea>
+ </div>
+<div class="form-control d-flex-column">
+<label for="tema">Tema</label>
+<input type="text" class="input-search" name="tema" id="tema">
+ </div>
+ <div class="form-control d-flex-column">
+ <label for="medio_contacto">Medio de Contacto</label>
+ <input type="text" class="input-search" name="medio_contacto" id="medio-contacto">
+ </div> <div class="form-control d-flex-column">
+ <label for="archivo">Archivo</label>
+ <input type="url" class="input-search" name="archivo" id="archivo">
+ </div>
+ <input type="hidden" name="id_contacto" id="id-contacto">
+ <button class="btn-cac" type="button" id="btn-save-contacto">Agregar</button>
+</div>
+</form>
+
+<section id="list" class="container">
+      <h3 class="subtitle">Listado de contactos</h3>
+         <table id="list-table-contacts" class="table">
+            <thead>
+                 <tr>
+                 <th>Nombre</th>
+                 <th>Email</th>
+                 <th>Comentario</th>
+                 <th>Tema</th>
+                 <th>Medio de Contacto</th>
+                 <th>Archivo</th>
+                 <th>Opciones</th>
+                 </tr>
+                 </thead>
+             <tbody>
+             <!-- Aquí se añadirán dinámicamente las filas de contactos -->
+            </tbody>
+        </table>
+    </section>
+    
